@@ -196,6 +196,123 @@ font-family: 'Open Sans', sans-serif; */
 	background: url("../images/theCabins-background.jpg") no-repeat;
 	background-size: cover;
 	width: 100%;
-	height: 500px;
+	height: 440px;
 	margin-bottom: 150px;
+}
+
+.container-gallery-photo{
+	margin: 0 32px;
+}
+
+.gallery-photo-list{
+	display: flex;
+	justify-content: space-between;
+	list-style: none;
+	margin-bottom: 150px;
+}
+
+.location-map{
+	display: flex;
+}
+
+.about-the-forest{
+	width: 50%;
+	min-height: 400px;
+	padding-top: 150px;
+	padding-bottom: 150px;
+	padding-left: 110px;
+	display: flex;
+	justify-content: center;
+	align-items: start;
+	flex-direction: column;
+	background: #E9ECE0;
+}
+
+.the-forest-title{
+	margin-bottom: 50px;
+	font-style: normal;
+	font-weight: 400;
+	font-size: 40px;
+	line-height: 40px;
+	color: #5B6460;
+}
+
+.the-forest-text{
+	font-style: normal;
+	font-weight: 300;
+	font-size: 16px;
+	line-height: 30px;
+	color: #000000;
+	margin-right: 105px;
+	margin-bottom: 20px;
+	max-width: 600px;
+}
+
+.the-forest-link{
+	font-style: normal;
+	font-weight: 600;
+	font-size: 16px;
+	line-height: 30px;
+	color: #5B6460;
+	text-decoration: none;
+	border-bottom: 2px solid #5B6460;
+}
+
+.facilities{
+	background: #5B6460;
+	padding-top: 150px;
+}
+
+.container-facilities{
+	max-width: 1400px;
+	margin: 0 auto;
+}
+
+.facilities-title{
+	font-family: 'Open Sans',sans-serif;
+	font-style: normal;
+	font-weight: 300;
+	font-size: 40px;
+	line-height: 40px;
+	text-align: center;
+	color: #FFFFFF;
+	margin-bottom: 120px;
+}
+
+.facilities-lists{
+	display: flex;
+	justify-content: space-between;
+}
+
+.facilities-list{
+	list-style: none;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	/* margin-bottom: 85px; */
+}
+
+.facitilies-item{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	margin-bottom: 90px;
+}
+
+.facitilies-item:last-child{
+	margin-bottom: 120px;
+}
+
+.facitilies-img{
+	margin-bottom: 20px;
+}
+
+.facitilies-item p{
+	font-family: 'Open Sans',sans-serif;
+	font-style: normal;
+	font-weight: 400;
+	font-size: 18px;
+	line-height: 28px;
+	text-align: center;
+	color: #FFFFFF;
 }
