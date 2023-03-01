@@ -316,3 +316,139 @@ font-family: 'Open Sans', sans-serif; */
 	text-align: center;
 	color: #FFFFFF;
 }
+
+.more-about-us{
+	display: flex;
+	position: relative;
+	margin-bottom: 150px;
+}
+
+.picture-about-us{
+	width: 50%;
+	height: 700px;
+}
+
+.more-about-us-btn{
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%, -50%);
+	padding: 70px 30px;
+	border-radius: 50%;
+	border: none;
+	cursor: pointer;
+	font-style: normal;
+	font-weight: 300;
+	font-size: 16px;
+	line-height: 22px;
+	color: #333333;
+}
+
+.picture-about-us-first{
+	background: url('../images/moreAboutUs/firstPicture.png') no-repeat;
+	background-size: cover;
+}
+
+.picture-about-us-second{
+	background: url('../images/moreAboutUs/secondPicture.png') no-repeat;
+	background-size: cover;
+}
+
+.stay-in-touch-with-us{
+	margin-bottom: 150px;
+}
+
+.container-stay-in-touch-with-us{
+	max-width: 1400px;
+	margin: 0 auto;
+}
+
+.stay-in-touch-with-us-inner{
+	display: flex;
+	justify-content: space-between;
+}
+
+.stay-in-touch-with-us-title{
+	font-family: 'Open Sans', sans-serif;
+	font-style: normal;
+	font-weight: 400;
+	font-size: 40px;
+	line-height: 60px;
+	color: #5B6460;
+}
+
+.stay-in-touch-with-us-info{
+	width: 50%;
+}
+
+.stay-in-touch-with-us-info-inner p{
+	font-family: 'Open Sans', sans-serif;
+	font-style: normal;
+	font-weight: 300;
+	font-size: 16px;
+	line-height: 30px;
+	color: #000000;
+	margin-bottom: 20px;
+	padding-top: 50px;
+}
+
+.stay-in-touch-with-us-info-links{
+	display: flex;
+	flex-direction: column;
+	margin-bottom: 50px;
+}
+
+.stay-in-touch-with-us-info-links a{
+	text-decoration: none;
+	font-family: 'Open Sans',sans-serif;
+	font-style: normal;
+	font-weight: 300;
+	font-size: 16px;
+	line-height: 30px;
+	color: #000000;
+}
+
+.stay-in-touch-with-us-info-list{
+	list-style: none;
+	display: flex;
+}
+
+.stay-in-touch-with-us-info-item{
+	margin-right: 45px;
+}
+
+.stay-in-touch-with-us-picture{
+	width: 50%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.stay-in-touch-with-us-picture-inner{
+	background: url('../images/stayInTouchWithUs/firstPicture.png') no-repeat;
+	width: 379px;
+	height: 188px;
+	position: relative;
+}
+
+.book-a-hut{
+	position: absolute;
+	bottom: -100px;
+	left: 0;
+	display: flex;
+	align-items: center;	
+	box-sizing: border-box;
+}
+
+.book-a-hut-link{
+	padding: 36px 77px;
+	background: #5B6460;
+	font-style: normal;
+	font-weight: 300;
+	font-size: 16px;
+	line-height: 28px;
+	letter-spacing: 1px;
+	text-transform: uppercase;
+	color: #FFFFFF;
+	text-decoration: none;
+}
