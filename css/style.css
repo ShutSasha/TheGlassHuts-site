@@ -31,7 +31,6 @@ font-family: 'Open Sans', sans-serif; */
 
 .header-list{
 	display: flex;
-	list-style: none;
 }
 
 .header-list-item{
@@ -39,7 +38,6 @@ font-family: 'Open Sans', sans-serif; */
 }
 
 .header-list-link{
-	text-decoration: none;
 	text-transform: uppercase;
 	color: #000000;
 	font-style: normal;
@@ -118,7 +116,6 @@ font-family: 'Open Sans', sans-serif; */
 	letter-spacing: 1px;
 	text-transform: uppercase;
 	color: #FFFFFF;
-	text-decoration: none;
 }
 
 .price-for-book{
@@ -196,7 +193,6 @@ font-family: 'Open Sans', sans-serif; */
 	font-size: 16px;
 	line-height: 30px;
 	color: #5B6460;
-	text-decoration: none;
 	border-bottom: 2px solid #5B6460;
 }
 
@@ -215,7 +211,6 @@ font-family: 'Open Sans', sans-serif; */
 .gallery-photo-list{
 	display: flex;
 	justify-content: space-between;
-	list-style: none;
 	margin-bottom: 150px;
 }
 
@@ -262,7 +257,6 @@ font-family: 'Open Sans', sans-serif; */
 	font-size: 16px;
 	line-height: 30px;
 	color: #5B6460;
-	text-decoration: none;
 	border-bottom: 2px solid #5B6460;
 }
 
@@ -293,7 +287,6 @@ font-family: 'Open Sans', sans-serif; */
 }
 
 .facilities-list{
-	list-style: none;
 	display: flex;
 	flex-direction: column;
 	align-items: center;
@@ -407,7 +400,6 @@ font-family: 'Open Sans', sans-serif; */
 }
 
 .stay-in-touch-with-us-info-links a{
-	text-decoration: none;
 	font-family: 'Open Sans',sans-serif;
 	font-style: normal;
 	font-weight: 300;
@@ -417,7 +409,6 @@ font-family: 'Open Sans', sans-serif; */
 }
 
 .stay-in-touch-with-us-info-list{
-	list-style: none;
 	display: flex;
 }
 
@@ -458,7 +449,6 @@ font-family: 'Open Sans', sans-serif; */
 	letter-spacing: 1px;
 	text-transform: uppercase;
 	color: #FFFFFF;
-	text-decoration: none;
 }
 
 .footer{
@@ -543,7 +533,6 @@ font-family: 'Open Sans', sans-serif; */
 }
 
 .privacy-list{
-	list-style: none;
 	display: flex;
 	margin-bottom: 60px;
 }
@@ -557,7 +546,6 @@ font-family: 'Open Sans', sans-serif; */
 }
 
 .privacy-link{
-	text-decoration: none;
 	font-style: normal;
 	font-weight: 300;
 	font-size: 14px;
@@ -567,7 +555,6 @@ font-family: 'Open Sans', sans-serif; */
 }
 
 .cards-list{
-	list-style: none;
 	display: flex;
 }
 
@@ -578,3 +565,728 @@ font-family: 'Open Sans', sans-serif; */
 .cards-item:last-child{
 	margin: 0;
 }
+
+
+/* ! slider */
+
+/* .slider {
+	width: 100%;
+	height: 1080px;
+	overflow: hidden;
+ }
+ 
+ .slides {
+	position: relative;
+	display: flex;
+	width: 100%;
+	height: 100%;
+ }
+ 
+ .slide {
+	flex: 1 0 100%;
+	height: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-size: 3em;
+ }
+ 
+ .slide-1{
+	background: url('../images/background-find-place.png') no-repeat;
+	background-size: cover;
+	height: 100vh;
+	transition:  .5s linear;
+ }
+ .slide-2{
+	background: url('../images/theCabins-background.jpg') no-repeat;
+	background-size: cover;
+	height: 100vh;
+	transition:  .5s linear;
+ }
+ .slide-3{
+	background: url('../images/gallery-photo/first-photo.jpg') no-repeat;
+	background-size: cover;
+	height: 100vh;
+	transition:  .5s linear;
+ }
+ 
+ 
+ .next {
+	right: 0;
+	top: 50%;
+	position: absolute;
+	height: 100px;
+	width: 100px;
+	background-color: transparent;
+	border: none;
+	outline: none;
+	font-size: 1.5em;
+	cursor: pointer;
+	color: red;
+ }
+
+ .prev{
+	left: 0;
+	top: 50%;
+	position: absolute;
+	height: 100px;
+	width: 100px;
+	background-color: transparent;
+	border: none;
+	outline: none;
+	font-size: 1.5em;
+	cursor: pointer;
+	color: red;
+ }
+ 
+ 
+ 
+ .next {
+	margin-left: 10px;
+ }
+
+ .slide img{
+	width: 1000px;
+	height: 1000px;
+	background-size: cover;
+ }
+
+
+ .slider{
+	margin-bottom: 500px;
+ } */
+ /* ! slider */
+
+
+
+ /* ! theHut.html */
+
+.the-hut{
+	margin-bottom: 150px;
+}
+
+.the-hut-inner{
+	background: url('../images/1TheHutPage/header-section-background.png') no-repeat;
+	background-size: cover;
+	height: 350px;
+}
+
+.the-hut-inner{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.the-hut-title{
+	font-family: 'Open Sans',sans-serif;
+	font-style: normal;
+	font-weight: 300;
+	font-size: 70px;
+	line-height: 72px;
+	text-align: center;
+	color: #FFFFFF;
+}
+
+.container-main-block-the-hut{
+	max-width: 1440px;
+	margin: 0 auto;
+}
+
+.outside-inner{
+	display: flex;
+	margin-bottom: 220px;
+}
+
+.img-outside{
+	background: url('../images/1TheHutPage/the-outside.png') no-repeat;
+	background-size: cover;
+	width: 50%;
+}
+
+.outside-info{
+	width: 50%;
+	display: flex;
+	align-items: start;
+	flex-direction: column;
+	margin-left: 140px;
+	margin-top: 100px;
+}
+
+.outside-title{
+	font-style: normal;
+	font-weight: 400;
+	font-size: 40px;
+	line-height: 40px;
+	color: #5B6460;
+	margin-bottom: 50px;
+}
+
+.hot-tube-and-el-car{
+	display: flex;
+	margin-bottom: 50px;
+}
+
+.hot-tube-and-el-car p:first-child{
+	margin-right: 30px;
+}
+
+.hot-tube-and-el-car p{
+	font-style: italic;
+	font-weight: 400;
+	font-size: 18px;
+	line-height: 30px;
+	color: #5B6460;
+	
+}
+
+.outside-text{
+	font-style: normal;
+	font-weight: 300;
+	font-size: 16px;
+	line-height: 30px;
+	color: #333333;
+	margin-bottom: 100px;
+}
+
+.img-inside{
+	background: url('../images/1TheHutPage/the-inside.png') no-repeat;
+	background-size: cover;
+	width: 50%;
+}
+
+.the-inside-inner{
+	display: flex;
+	margin-bottom: 220px;
+	justify-content: space-between;
+}
+
+/*  */
+.inside-info{
+	width: 50%;
+	display: flex;
+	align-items: start;
+	flex-direction: column;
+	max-width: 520px;
+}
+
+.inside-title{
+	font-style: normal;
+	font-weight: 400;
+	font-size: 40px;
+	line-height: 40px;
+	color: #5B6460;
+	margin-bottom: 50px;
+}
+
+.space-kitchen-bathroom{
+	display: flex;
+	margin-bottom: 50px;
+}
+
+
+
+.space-kitchen-bathroom p{
+	font-style: italic;
+	font-weight: 400;
+	font-size: 18px;
+	line-height: 30px;
+	color: #5B6460;
+	margin-right: 25px;
+	
+}
+
+.inside-text{
+	font-style: normal;
+	font-weight: 300;
+	font-size: 16px;
+	line-height: 30px;
+	color: #333333;
+	margin-bottom: 200px;
+}
+/*  */
+
+.img-practicalities{
+	background: url('../images/1TheHutPage/practicalities.png') no-repeat;
+	background-size: cover;
+	width: 50%;
+}
+
+.practicalities-info{
+	width: 50%;
+	display: flex;
+	align-items: start;
+	flex-direction: column;
+	margin-left: 140px;
+	margin-top: 100px;
+}
+
+.practicalities-title{
+	font-style: normal;
+	font-weight: 400;
+	font-size: 40px;
+	line-height: 40px;
+	color: #5B6460;
+	margin-bottom: 50px;
+}
+
+.breakfest-dinner{
+	display: flex;
+	margin-bottom: 50px;
+}
+
+.breakfest-dinner p:first-child{
+	margin-right: 30px;
+}
+
+.breakfest-dinner p{
+	font-style: italic;
+	font-weight: 400;
+	font-size: 18px;
+	line-height: 30px;
+	color: #5B6460;
+	
+}
+
+.practicalities-text{
+	font-style: normal;
+	font-weight: 300;
+	font-size: 16px;
+	line-height: 30px;
+	color: #333333;
+	margin-bottom: 200px;
+}
+
+.practicalities-inner{
+	display: flex;
+	margin-bottom: 220px;
+	justify-content: space-between;
+}
+
+/* !!!!         THE AREA PAGE       !!!! */
+/* !!!!         THE AREA PAGE       !!!! */
+
+.the-area{
+	margin-bottom: 150px;
+}
+
+.the-area-inner{
+	background: url('../images/2TheArea/the-area-background.png') no-repeat;
+	background-size: cover;
+	height: 350px;
+}
+
+.the-area-inner{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+}
+
+.the-area-title{
+	font-family: 'Open Sans',sans-serif;
+	font-style: normal;
+	font-weight: 300;
+	font-size: 70px;
+	line-height: 72px;
+	text-align: center;
+	color: #FFFFFF;
+	margin-bottom: 15px;
+}
+
+.location-area{
+	display: flex;
+	align-items: center;
+	margin-bottom: 50px;
+}
+
+.location-area img{
+	width: 10px;
+	height: 15px;
+	margin-right: 10px;
+}
+
+.vesterborg-denmark-location{
+	font-style: normal;
+	font-weight: 300;
+	font-size: 18px;
+	line-height: 24px;
+	text-decoration-line: underline;
+	color: #FFFFFF;
+}
+
+.get-directions{
+	font-style: normal;
+	font-weight: 300;
+	font-size: 14px;
+	line-height: 28px;
+	text-align: center;
+	letter-spacing: 1px;
+	text-transform: uppercase;
+	color: #FFFFFF;
+	padding: 15px 30px;
+	border: 1px solid #FFFFFF;
+	outline: 1 solid #FFFFFF;
+	background: none;
+	cursor: pointer;
+}
+
+.container-main-block-the-area{
+	max-width: 1440px;
+	margin: 0 auto;
+}
+
+.vesterborg-inner{
+	display: flex;
+	margin-bottom: 220px;
+}
+
+.img-vesterborg{
+	background: url('../images/2TheArea/vesterborg.png') no-repeat;
+	background-size: cover;
+	width: 50%;
+}
+
+.vesterborg-info{
+	width: 50%;
+	display: flex;
+	align-items: start;
+	flex-direction: column;
+	margin-left: 140px;
+	margin-top: 100px;
+}
+
+.vesterborg-title{
+	font-style: normal;
+	font-weight: 400;
+	font-size: 40px;
+	line-height: 40px;
+	color: #5B6460;
+	margin-bottom: 50px;
+}
+
+.lorem-text-area{
+	margin-bottom: 50px;
+	max-width: 350px;
+}
+
+
+.lorem-text-area p{
+	font-style: italic;
+	font-weight: 400;
+	font-size: 24px;
+	line-height: 36px;
+	color: #5B6460;
+}
+
+.vesterborg-text{
+	font-style: normal;
+	font-weight: 300;
+	font-size: 16px;
+	line-height: 30px;
+	color: #333333;
+	margin-bottom: 100px;
+}
+
+/*  */
+
+.img-inside{
+	background: url('../images/1TheHutPage/the-inside.png') no-repeat;
+	background-size: cover;
+	width: 50%;
+}
+
+.the-inside-inner{
+	display: flex;
+	margin-bottom: 220px;
+	justify-content: space-between;
+}
+
+/*  */
+.inside-info{
+	width: 50%;
+	display: flex;
+	align-items: start;
+	flex-direction: column;
+	max-width: 520px;
+}
+
+.inside-title{
+	font-style: normal;
+	font-weight: 400;
+	font-size: 40px;
+	line-height: 40px;
+	color: #5B6460;
+	margin-bottom: 50px;
+}
+
+.space-kitchen-bathroom{
+	display: flex;
+	margin-bottom: 50px;
+}
+
+
+
+.space-kitchen-bathroom p{
+	font-style: italic;
+	font-weight: 400;
+	font-size: 18px;
+	line-height: 30px;
+	color: #5B6460;
+	margin-right: 25px;
+	
+}
+
+.inside-text{
+	font-style: normal;
+	font-weight: 300;
+	font-size: 16px;
+	line-height: 30px;
+	color: #333333;
+	margin-bottom: 200px;
+}
+
+/* soon will do */
+/*  I need to do maps img section first*/
+
+.the-maps-with-text{
+	margin-bottom: 150px;
+}
+
+.img-maps-block{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 50%;
+}
+
+.img-maps{
+	background: url('../images/2TheArea/map.png') no-repeat;
+	background-size: cover;
+	width: 500px;
+	height: 500px;
+}
+
+.maps-with-text-info{
+	width: 50%;
+}
+
+.the-maps-with-text-inner{
+	display: flex;
+	justify-content: space-between;
+}
+
+.text-block-maps{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 500px;
+}
+
+
+
+.maps-with-text{
+	font-style: normal;
+	font-weight: 300;
+	font-size: 16px;
+	line-height: 30px;
+	color: #333333;
+}
+
+/* ! activities start*/
+/* ! activities start*/
+
+.activities-title{
+	font-style: normal;
+	font-weight: 400;
+	font-size: 40px;
+	line-height: 56px;
+	color: #5B6460;
+	margin-bottom: 100px;
+}
+
+.restaurants-shopping-inner{
+	display: flex;
+	margin-bottom: 220px;
+	justify-content: space-between;
+}
+
+.img-restaurants-shopping{
+	background: url('../images/2TheArea/restaurants-shopping.png') no-repeat;
+	background-size: cover;
+	width: 50%;
+}
+
+.restaurants-shopping-info{
+	width: 50%;
+	display: flex;
+	align-items: start;
+	flex-direction: column;
+	margin-left: 140px;
+	margin-top: 100px;
+}
+
+.restaurants-shopping-title{
+	font-style: normal;
+	font-weight: 400;
+	font-size: 40px;
+	line-height: 40px;
+	color: #5B6460;
+	margin-bottom: 50px;
+}
+
+.breakfest-dinner{
+	display: flex;
+	margin-bottom: 50px;
+}
+
+.breakfest-dinner p:first-child{
+	margin-right: 30px;
+}
+
+.breakfest-dinner p{
+	font-style: italic;
+	font-weight: 400;
+	font-size: 18px;
+	line-height: 30px;
+	color: #5B6460;
+	
+}
+
+.restaurants-shopping-text{
+	font-style: normal;
+	font-weight: 300;
+	font-size: 16px;
+	line-height: 30px;
+	color: #333333;
+	margin-bottom: 200px;
+}
+
+
+
+/* ! activities end*/
+/* ! activities end*/
+
+
+/* ! Experiences in nature start*/
+/* ! Experiences in nature start*/
+
+
+.img-experiences-in-nature{
+	background: url('../images/2TheArea/experiences-in-nature.png') no-repeat;
+	background-size: cover;
+	width: 50%;
+}
+
+.the-experiences-in-nature-inner{
+	display: flex;
+	margin-bottom: 220px;
+	justify-content: space-between;
+}
+
+/*  */
+.experiences-in-nature-info{
+	width: 50%;
+	display: flex;
+	align-items: start;
+	flex-direction: column;
+	max-width: 520px;
+}
+
+.experiences-in-nature-title{
+	font-style: normal;
+	font-weight: 400;
+	font-size: 40px;
+	line-height: 40px;
+	color: #5B6460;
+	margin-bottom: 50px;
+}
+
+.space-kitchen-bathroom{
+	display: flex;
+	margin-bottom: 50px;
+}
+
+
+
+.space-kitchen-bathroom p{
+	font-style: italic;
+	font-weight: 400;
+	font-size: 18px;
+	line-height: 30px;
+	color: #5B6460;
+	margin-right: 25px;
+	
+}
+
+.experiences-in-nature-text{
+	font-style: normal;
+	font-weight: 300;
+	font-size: 16px;
+	line-height: 30px;
+	color: #333333;
+	margin-bottom: 200px;
+}
+
+
+/* ! Experiences in nature end*/
+/* ! Experiences in nature end*/
+
+.img-practicalities{
+	background: url('../images/1TheHutPage/practicalities.png') no-repeat;
+	background-size: cover;
+	width: 50%;
+}
+
+.practicalities-info{
+	width: 50%;
+	display: flex;
+	align-items: start;
+	flex-direction: column;
+	margin-left: 140px;
+	margin-top: 100px;
+}
+
+.practicalities-title{
+	font-style: normal;
+	font-weight: 400;
+	font-size: 40px;
+	line-height: 40px;
+	color: #5B6460;
+	margin-bottom: 50px;
+}
+
+.breakfest-dinner{
+	display: flex;
+	margin-bottom: 50px;
+}
+
+.breakfest-dinner p:first-child{
+	margin-right: 30px;
+}
+
+.breakfest-dinner p{
+	font-style: italic;
+	font-weight: 400;
+	font-size: 18px;
+	line-height: 30px;
+	color: #5B6460;
+	
+}
+
+.practicalities-text{
+	font-style: normal;
+	font-weight: 300;
+	font-size: 16px;
+	line-height: 30px;
+	color: #333333;
+	margin-bottom: 200px;
+}
+
+.practicalities-inner{
+	display: flex;
+	margin-bottom: 220px;
+	justify-content: space-between;
+}
+
+/* !!!!         THE AREA PAGE       !!!! */
+/* !!!!         THE AREA PAGE       !!!! */

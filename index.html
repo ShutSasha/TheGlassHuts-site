@@ -22,12 +22,36 @@
 				</div>
 				<nav class="nav-header">
 					<ul class="header-list">
-						<li class="header-list-item"><a class="header-list-link" href="#">Home</a></li>
-						<li class="header-list-item"><a class="header-list-link" href="#">The hut</a></li>
-						<li class="header-list-item"><a class="header-list-link" href="#">The area</a></li>
-						<li class="header-list-item"><a class="header-list-link" href="#">Booking</a></li>
-						<li class="header-list-item"><a class="header-list-link" href="#">About us</a></li>
-						<li class="header-list-item"><a class="header-list-link" href="#">Faq</a></li>
+						<li class="header-list-item">
+							<a class="header-list-link" href="index.html">
+								Home
+							</a>
+						</li>
+						<li class="header-list-item">
+							<a class="header-list-link" href="theHut.html">
+								The hut
+							</a>
+						</li>
+						<li class="header-list-item">
+							<a class="header-list-link" href="theArea.html">
+								The area
+							</a>
+						</li>
+						<li class="header-list-item">
+							<a class="header-list-link" href="#">
+								Booking
+							</a>
+						</li>
+						<li class="header-list-item">
+							<a class="header-list-link" href="#">
+								About us
+							</a>
+						</li>
+						<li class="header-list-item">
+							<a class="header-list-link" href="#">
+								Faq
+							</a>
+						</li>
 					</ul>
 				</nav>
 				<div class="book-now">
@@ -98,7 +122,7 @@
 			</div>
 		</section>
 		<section class="location-map">
-			<div id="map" style="width: 50%;"></div>
+			<div id="google-map-main-page" style="width: 50%;"></div>
 			<div class="about-the-forest">
 				<h2 class="the-forest-title">
 					The Forest
@@ -237,61 +261,79 @@
 				</div>
 			</div>
 		</section>
-		<footer class="footer">
-			<div class="container-footer">
-				<div class="footer-inner">
-					<div class="newsletter">
-						<h6 class="newsletter-title">
-							Newsletter
-						</h6>
-						<input placeholder="Email Adrdess" class="footer-input-email" type="text">
-						<hr>
-						<p class="newsletter-first-text">
-							Sign up to our newsletter for special things and receive <br>10% off your next order.
-						</p>
-						<p class="newsletter-second-text">
-							© 2021 The Glass Huts
-						</p>
-					</div>
-					<div class="cards-and-privacy">
-						<ul class="privacy-list">
-							<li class="privacy-item">
-								<a class="privacy-link" href="#">TERMS AND CONDITIONS</a>
-							</li>
-							<li class="privacy-item">
-								<a class="privacy-link" href="#">CENCELLATION POLICY</a>
-							</li>
-							<li class="privacy-item">
-								<a class="privacy-link" href="#">PRIVACY POLICY</a>
-							</li>
-						</ul>
-						<ul class="cards-list">
-							<li class="cards-item">
-								<a class="cards-link" href="#">
-									<img src="./images/cards/paypal-logo1.png" alt="">
-								</a>
-							</li>
-							<li class="cards-item">
-								<a class="cards-link" href="#">
-									<img src="./images/cards/symbol2.png" alt="">
-								</a>
-							</li>
-							<li class="cards-item">
-								<a class="cards-link" href="#">
-									<img src="./images/cards/visa.png" alt="">
-								</a>
-							</li>
-							<li class="cards-item">
-								<a class="cards-link" href="#">
-									<img src="./images/cards/symbols4.png" alt="">
-								</a>
-							</li>
-						</ul>
-					</div>
+	</main>
+	<footer class="footer">
+		<div class="container-footer">
+			<div class="footer-inner">
+				<div class="newsletter">
+					<h6 class="newsletter-title">
+						Newsletter
+					</h6>
+					<input placeholder="Email Adrdess" class="footer-input-email" type="text">
+					<hr>
+					<p class="newsletter-first-text">
+						Sign up to our newsletter for special things and receive <br>10% off your next order.
+					</p>
+					<p class="newsletter-second-text">
+						© 2021 The Glass Huts
+					</p>
+				</div>
+				<div class="cards-and-privacy">
+					<ul class="privacy-list">
+						<li class="privacy-item">
+							<a class="privacy-link" href="#">TERMS AND CONDITIONS</a>
+						</li>
+						<li class="privacy-item">
+							<a class="privacy-link" href="#">CENCELLATION POLICY</a>
+						</li>
+						<li class="privacy-item">
+							<a class="privacy-link" href="#">PRIVACY POLICY</a>
+						</li>
+					</ul>
+					<ul class="cards-list">
+						<li class="cards-item">
+							<a class="cards-link" href="#">
+								<img src="./images/cards/paypal-logo1.png" alt="">
+							</a>
+						</li>
+						<li class="cards-item">
+							<a class="cards-link" href="#">
+								<img src="./images/cards/symbol2.png" alt="">
+							</a>
+						</li>
+						<li class="cards-item">
+							<a class="cards-link" href="#">
+								<img src="./images/cards/visa.png" alt="">
+							</a>
+						</li>
+						<li class="cards-item">
+							<a class="cards-link" href="#">
+								<img src="./images/cards/symbols4.png" alt="">
+							</a>
+						</li>
+					</ul>
 				</div>
 			</div>
-		</footer>
-	</main>
+		</div>
+	</footer>
+
+
+	<!--! test sldier <div class="slider">
+		<div class="slides">
+			<div class="slide slide-1">
+
+			</div>
+			<div class="slide slide-2">
+
+			</div>
+			<div class="slide slide-3">
+
+			</div>
+			<button class="prev">Prev</button>
+			<button class="next">Next</button>
+		</div>
+
+	</div> -->
 	<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCkxR4hXey2TTYaWTvjJqLYwRFLwvXN_ak"></script>
 	<script type="module" src="./scripts/googleMaps.js">
 	</script>
