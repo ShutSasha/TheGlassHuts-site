@@ -42,8 +42,15 @@ font-family: 'Open Sans', sans-serif; */
 	color: #000000;
 	font-style: normal;
 	font-weight: 400;
-	font-size: 14px;
+	font-size: 16px;
 	line-height: 24px;
+	color: #5B6460;
+	transition: color .5s ease-out;
+}
+
+.header-list-link:hover{
+	color: #8cb2bf;
+	transition: color .4s ease-out;
 }
 
 .book-now-btn{
@@ -58,6 +65,12 @@ font-family: 'Open Sans', sans-serif; */
 	text-transform: uppercase;
 	color: #FFFFFF;
 	cursor: pointer;
+	transition: background .5s ease-out;
+}
+
+.book-now-btn:hover{
+	background: #808E88;
+	transition: background .4s ease-out;
 }
 
 .find-place-in-forest{
@@ -116,9 +129,26 @@ font-family: 'Open Sans', sans-serif; */
 	letter-spacing: 1px;
 	text-transform: uppercase;
 	color: #FFFFFF;
+	transition: background .4s ease-out;
+}
+
+.book-now-main-content-link:hover{
+	background: #808E88;
+	transition: background .4s ease-out;
 }
 
 .price-for-book{
+	background: #E9ECE0;
+	box-sizing: border-box; 
+	max-height: 100px;
+	padding: 22px 30px 22px 30px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+}
+
+.price-for-book-footer{
 	background: #E9ECE0;
 	box-sizing: border-box; 
 	max-height: 100px;
@@ -194,6 +224,13 @@ font-family: 'Open Sans', sans-serif; */
 	line-height: 30px;
 	color: #5B6460;
 	border-bottom: 2px solid #5B6460;
+	transition: color .3s ease-out,border .3s ease-out;
+}
+
+.the-cabins-link:hover{
+	color: #8cb2bf;
+	border-bottom: 2px solid #8cb2bf;
+	transition: color .4s ease-out, border .4s ease-out;
 }
 
 .the-cabins-img-block{
@@ -258,6 +295,13 @@ font-family: 'Open Sans', sans-serif; */
 	line-height: 30px;
 	color: #5B6460;
 	border-bottom: 2px solid #5B6460;
+	transition: color .3s ease-out, border .3s ease-out;
+}
+
+.the-forest-link:hover{
+	color: #8cb2bf;
+	border-bottom: 2px solid #8cb2bf;
+	transition: color .4s ease-out, border .4s ease-out;
 }
 
 .facilities{
@@ -343,6 +387,14 @@ font-family: 'Open Sans', sans-serif; */
 	font-size: 16px;
 	line-height: 22px;
 	color: #333333;
+	transition: background .4s ease-out, color .4s ease-out;
+}
+
+
+.more-about-us-btn:hover{
+	background: #8cb2bf;
+	color: #FFFFFF;
+	transition: background .4s ease-in, color .2s ease-in;
 }
 
 .picture-about-us-first{
@@ -449,6 +501,12 @@ font-family: 'Open Sans', sans-serif; */
 	letter-spacing: 1px;
 	text-transform: uppercase;
 	color: #FFFFFF;
+	transition: background .4s ease-out;
+}
+
+.book-a-hut-link:hover{
+	background: #808E88;
+	transition: background .4s ease-out;
 }
 
 .footer{
@@ -564,6 +622,123 @@ font-family: 'Open Sans', sans-serif; */
 
 .cards-item:last-child{
 	margin: 0;
+}
+
+@media (max-width: 1600px) {
+	.gallery-photo-item img{
+		width: 380px;
+		height: 380px;
+	}
+
+	
+}
+
+@media (max-width: 1440px) {
+	.container-gallery-photo{
+		margin: 0 40px;
+	}
+
+	.container-facilities{
+		max-width: 1120px;
+	}
+
+	.container-stay-in-touch-with-us{
+		max-width: 1120px;
+	}
+
+	.container-footer{
+		max-width: 1120px;
+	}
+
+	.gallery-photo-item img{
+		width: 300px;
+		height: 300px;
+	}
+
+}
+
+@media (max-width: 1280px){
+	.container-facilities{
+		max-width: 900px;
+	}
+
+	.container-stay-in-touch-with-us{
+		max-width: 900px;
+	}
+
+	.container-footer{
+		max-width: 900px;
+	}
+
+	.header-container{
+		margin: 0 auto;
+		max-width: 1000px;
+	}
+}
+
+@media (max-width: 1024px){
+	.the-cabins-img-block{
+		display: none;
+	}
+
+	.the-cabins-info{
+		max-width: 100%;
+		margin-bottom: 100px;
+	}
+
+	.gallery-photo-inner{
+		display: flex;
+		justify-content: center;
+	}
+
+	.gallery-photo-list{
+		flex-direction: column;
+	}
+
+	.gallery-photo-item{
+		margin-bottom: 50px;
+	}
+
+	.gallery-photo-item img{
+		height: 500px;
+		width: 500px;
+	}
+
+	.about-the-forest{
+		padding-top: 100px;
+		padding-bottom: 100px;
+		padding-left: 70px;
+	}
+
+	.the-forest-text{
+		margin-right: 70px;
+	}
+
+	.container-facilities{
+		max-width: 700px;
+	}
+
+	.container-stay-in-touch-with-us{
+		max-width: 700px;
+	}
+
+	.container-footer{
+		max-width: 700px;
+	}
+
+	.header-container{
+		margin: 0 auto;
+		max-width: 700px;
+	}
+
+	.logo{
+		margin-right: 40px;
+	}
+
+	.price-for-book-footer{
+		padding: 64px 30px;
+	}
+
 }
 
 
