@@ -1036,6 +1036,10 @@ font-family: 'Open Sans', sans-serif; */
 		margin-right: 0;
 		max-width: 300px;
 	}
+
+	.stay-in-touch-with-us-title{
+		text-align: center;
+	}
 }
 /* ! slider */
 
