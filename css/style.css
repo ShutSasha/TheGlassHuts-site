@@ -4,6 +4,7 @@
 	font-family: 'Open Sans', sans-serif;
 }
 
+
 ul,ol{
 	list-style: none;
 }
@@ -1039,6 +1040,10 @@ font-family: 'Open Sans', sans-serif; */
 
 	.stay-in-touch-with-us-title{
 		text-align: center;
+	}
+
+	html,body{
+		overflow-x: hidden;
 	}
 }
 /* ! slider */
