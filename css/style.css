@@ -312,6 +312,7 @@ font-family: 'Open Sans', sans-serif; */
 
 .location-map{
 	display: flex;
+	margin-bottom: 150px;
 }
 
 .about-the-forest{
@@ -361,6 +362,32 @@ font-family: 'Open Sans', sans-serif; */
 	color: #8cb2bf;
 	border-bottom: 2px solid #8cb2bf;
 	transition: color .4s ease-out, border .4s ease-out;
+}
+
+.the-forest-video-inner{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+}
+
+.the-forest-house-title{
+	text-align: center;
+	margin-bottom: 50px;
+   font-style: normal;
+   font-weight: 400;
+   font-size: 40px;
+   line-height: 40px;
+   color: #5B6460;
+}
+
+.the-forest-video{
+	max-width: 1440px;
+	margin: 0 auto;
+}
+
+.tube-video-forest-house{
+	margin-bottom: 150px;
 }
 
 .facilities{
@@ -689,6 +716,11 @@ font-family: 'Open Sans', sans-serif; */
 		height: 380px;
 	}
 
+	.tube-video-forest-house{
+		width: 1024px;
+		height: 768px;
+	}
+
 	
 }
 
@@ -712,6 +744,11 @@ font-family: 'Open Sans', sans-serif; */
 	.gallery-photo-item img{
 		width: 300px;
 		height: 300px;
+	}
+
+	.tube-video-forest-house{
+		width: 900px;
+		height: 650px;
 	}
 
 }
@@ -740,6 +777,11 @@ font-family: 'Open Sans', sans-serif; */
 
 	.cards-and-privacy{
 		width: 60%;
+	}
+
+	.tube-video-forest-house{
+		width: 850px;
+		height: 600px;
 	}
 }
 
@@ -784,7 +826,15 @@ font-family: 'Open Sans', sans-serif; */
 	}
 
 	.header-list-link{
-		font-size: 48px;
+		font-size: 36px;
+	}
+
+	.nav-header{
+		padding: 0;
+	}
+
+	.header-list-item{
+		margin-right: 0;
 	}
 	
 	.burger.active::before, .burger.active::after{
@@ -882,6 +932,11 @@ font-family: 'Open Sans', sans-serif; */
 	.privacy-link{
 		font-size: 18px;
 	}
+
+	.tube-video-forest-house{
+		width: 700px;
+		height: 550px;
+	}
 }
 
 @media (max-width: 800px){
@@ -957,6 +1012,11 @@ font-family: 'Open Sans', sans-serif; */
 	.container-footer{
 		max-width: 600px;
 	}
+
+	.tube-video-forest-house{
+		width: 550px;
+		height: 400px;
+	}
 }
 
 @media (max-width: 640px){
@@ -1010,6 +1070,11 @@ font-family: 'Open Sans', sans-serif; */
 	.privacy-list{
 		align-items: center;
 	}
+
+	.tube-video-forest-house{
+		width: 410px;
+		height: 240px;
+	}
 }
 
 @media (max-width: 450px){
@@ -1044,6 +1109,11 @@ font-family: 'Open Sans', sans-serif; */
 
 	html,body{
 		overflow-x: hidden;
+	}
+
+	.tube-video-forest-house{
+		width: 310px;
+		height: 180px;
 	}
 }
 /* ! slider */
