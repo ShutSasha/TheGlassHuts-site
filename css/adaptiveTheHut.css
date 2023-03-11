@@ -1,0 +1,88 @@
+@media (max-width: 1600px) {
+	.container-main-block-the-hut{
+		max-width: 1200px;
+		padding: 0 15px;
+	}
+}
+
+@media (max-width: 1440px) {
+	.container-main-block-the-hut{
+		max-width: 900px;
+	}
+
+	.img-outside{
+		height: 500px;
+	}
+
+	.img-inside{
+		width: 40%;
+		height: 500px;
+	}
+
+	.img-practicalities{
+		height: 500px;
+	}
+}
+
+@media (max-width: 800px) {
+	.outside-inner{
+		margin-bottom: 150px;
+	}
+
+	.img-outside{
+		display: none;
+	}
+
+	.outside-info{
+		margin-left: 0;
+		align-items: center;
+		justify-content: center;
+		width: 100%;
+	}
+
+	.outside-text{
+		max-width: 80%;
+		margin-bottom: 0;
+	}
+
+	.the-inside-inner{
+		margin-bottom: 150px;
+	}
+
+	.img-inside{
+		display: none;
+	}
+
+	.inside-info{
+		width: 100%;
+		max-width: 100%;
+		align-items: center;
+		justify-content: center;
+	}
+
+	.inside-text{
+		max-width: 80%;
+		margin-bottom: 0;
+	}
+
+	.practicalities-inner{
+		margin-bottom: 150px;
+	}
+
+	.img-practicalities{
+		display: none;
+	}
+
+	.practicalities-info{
+		margin-top: 0;
+		margin-left: 0;
+		width: 100%;
+		align-items: center;
+		justify-content: center;
+	}
+
+	.practicalities-text{
+		max-width: 80%;
+		margin-bottom: 0;
+	}
+}
