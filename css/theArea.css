@@ -1,0 +1,654 @@
+*{
+	margin: 0;
+	padding: 0;
+	font-family: 'Open Sans', sans-serif;
+}
+
+
+ul,ol{
+	list-style: none;
+}
+
+a{
+	text-decoration: none;
+}
+
+.header{
+	margin: 20px 0;
+}
+
+.header-container{
+	margin: 0 32px 0 146px;
+}
+
+.header-inner{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.header-list{
+	display: flex;
+}
+
+.header-list-item{
+	margin-right: 36px;
+}
+
+.header-list-link{
+	text-transform: uppercase;
+	color: #000000;
+	font-style: normal;
+	font-weight: 400;
+	font-size: 16px;
+	line-height: 24px;
+	color: #5B6460;
+	transition: color .5s ease-out;
+}
+
+.header-list-link:hover{
+	color: #8cb2bf;
+	transition: color .4s ease-out;
+}
+
+.book-now-btn{
+	padding: 16px 60px;
+	border: none;
+	background: #5B6460;
+	font-style: normal;
+	font-weight: 400;
+	font-size: 14px;
+	line-height: 28px;
+	letter-spacing: 1px;
+	text-transform: uppercase;
+	color: #FFFFFF;
+	cursor: pointer;
+	transition: background .5s ease-out;
+}
+
+.book-now-btn:hover{
+	background: #808E88;
+	transition: background .4s ease-out;
+}
+/* TODO burger start */
+.burger{
+	display: none;
+	position: relative;
+	z-index: 50;
+	align-items: center;
+	justify-content: flex-end;
+	width: 30px;
+	height: 18px;
+	cursor: pointer;
+}
+
+.burger span{
+	height: 2px;
+	width: 100%;
+	transform: scale(1);
+	background-color: #000000;
+}
+
+.burger::before, .burger::after{
+	content: "";
+	position: absolute;
+	height: 2px;
+	width: 100%;
+	background-color: #000000;
+	transition: all .3s ease 0s;
+}
+
+.burger::before{
+	top: 0;
+}
+
+.burger::after{
+	bottom: 0;
+}
+
+.burger.active span{
+	transform: scale(0);
+}
+
+.burger.active::before{
+	top: 50%;
+	transform: rotate(-45deg) translate(0,-50%);
+}
+
+.burger.active::after{
+	bottom: 50%;
+	transform: rotate(45deg) translate(0,50%);
+}
+
+.open{
+	display: flex !important;
+}
+
+
+
+/* TODO burger end */
+
+
+
+
+@media (max-width: 1600px) {
+
+	
+}
+
+@media (max-width: 1440px) {
+
+	.container-footer{
+		max-width: 1120px;
+	}
+}
+
+@media (max-width: 1280px){
+	.container-footer{
+		max-width: 900px;
+	}
+
+	.header-container{
+		margin: 0 auto;
+		max-width: 1000px;
+	}
+}
+
+@keyframes burgerAnimation{
+	from{
+		opacity: 0;
+	}
+	to{
+		opacity: 1;
+	}
+}
+
+@media (max-width: 1024px){
+
+	.burger{
+		display: flex;
+	}
+
+	.nav-header{
+		display: none;
+		justify-content: center;
+		align-items: center;
+		flex-direction: column;
+		position: fixed;
+		height: 100%;
+		width: 100%;
+		top: 0;
+		left: 0;
+		right: 0;
+		bottom: 0;
+		z-index: 50;
+		overflow-y: auto;
+		padding: 50px 40px;
+		background-color: black;
+		animation: burgerAnimation .4s;
+	}
+
+	.nav-header ul{
+		flex-direction: column;
+		align-items: center;
+		row-gap: 80px;
+	}
+
+	.header-list-link{
+		font-size: 36px;
+	}
+
+	.nav-header{
+		padding: 0;
+	}
+
+	.header-list-item{
+		margin-right: 0;
+	}
+	
+	.burger.active::before, .burger.active::after{
+		background-color: white;
+	}
+
+	.container-footer{
+		max-width: 700px;
+	}
+
+	.header-container{
+		margin: 0 auto;
+		max-width: 700px;
+	}
+
+	.logo{
+		margin-right: 40px;
+	}
+}
+
+@media (max-width: 800px){
+	.header-container {
+		max-width: 600px;
+	}
+
+
+	.container-footer{
+		max-width: 600px;
+	}
+
+}
+
+@media (max-width: 640px){
+	.header-container{
+		max-width: 450px;
+	}
+
+	.container-footer{
+		max-width: 450px;
+	}
+}
+
+@media (max-width: 450px){
+	.header-container{
+		max-width: 300px;
+	}
+
+	html,body{
+		overflow-x: hidden;
+	}
+}
+
+
+.the-area{
+	margin-bottom: 150px;
+}
+
+.the-area-inner{
+	background: url('../images/2TheArea/the-area-background.png') no-repeat;
+	background-size: cover;
+	height: 350px;
+}
+
+.the-area-inner{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+}
+
+.the-area-title{
+	font-family: 'Open Sans',sans-serif;
+	font-style: normal;
+	font-weight: 300;
+	font-size: 70px;
+	line-height: 72px;
+	text-align: center;
+	color: #FFFFFF;
+	margin-bottom: 15px;
+}
+
+.location-area{
+	display: flex;
+	align-items: center;
+	margin-bottom: 50px;
+}
+
+.location-area img{
+	width: 10px;
+	height: 15px;
+	margin-right: 10px;
+}
+
+.vesterborg-denmark-location{
+	font-style: normal;
+	font-weight: 300;
+	font-size: 18px;
+	line-height: 24px;
+	text-decoration-line: underline;
+	color: #FFFFFF;
+}
+
+.get-directions{
+	font-style: normal;
+	font-weight: 300;
+	font-size: 14px;
+	line-height: 28px;
+	text-align: center;
+	letter-spacing: 1px;
+	text-transform: uppercase;
+	color: #FFFFFF;
+	padding: 15px 30px;
+	border: 1px solid #FFFFFF;
+	outline: 1 solid #FFFFFF;
+	background: none;
+	cursor: pointer;
+}
+
+.container-main-block-the-area{
+	max-width: 1440px;
+	margin: 0 auto;
+}
+
+.vesterborg-inner{
+	display: flex;
+	margin-bottom: 220px;
+}
+
+.img-vesterborg{
+	background: url('../images/2TheArea/vesterborg.png') no-repeat;
+	background-size: cover;
+	width: 50%;
+}
+
+.vesterborg-info{
+	width: 50%;
+	display: flex;
+	align-items: start;
+	flex-direction: column;
+	margin-left: 140px;
+	margin-top: 100px;
+}
+
+.vesterborg-title{
+	font-style: normal;
+	font-weight: 400;
+	font-size: 40px;
+	line-height: 40px;
+	color: #5B6460;
+	margin-bottom: 50px;
+}
+
+.lorem-text-area{
+	margin-bottom: 50px;
+	max-width: 350px;
+}
+
+.lorem-text-area p{
+	font-style: italic;
+	font-weight: 400;
+	font-size: 24px;
+	line-height: 36px;
+	color: #5B6460;
+}
+
+.vesterborg-text{
+	font-style: normal;
+	font-weight: 300;
+	font-size: 16px;
+	line-height: 30px;
+	color: #333333;
+	margin-bottom: 100px;
+}
+
+.img-inside{
+	background: url('../images/1TheHutPage/the-inside.png') no-repeat;
+	background-size: cover;
+	width: 50%;
+}
+
+.the-inside-inner{
+	display: flex;
+	margin-bottom: 220px;
+	justify-content: space-between;
+}
+
+/*  */
+.inside-info{
+	width: 50%;
+	display: flex;
+	align-items: start;
+	flex-direction: column;
+	max-width: 520px;
+}
+
+.inside-title{
+	font-style: normal;
+	font-weight: 400;
+	font-size: 40px;
+	line-height: 40px;
+	color: #5B6460;
+	margin-bottom: 50px;
+}
+
+.space-kitchen-bathroom{
+	display: flex;
+	margin-bottom: 50px;
+}
+
+
+
+.space-kitchen-bathroom p{
+	font-style: italic;
+	font-weight: 400;
+	font-size: 18px;
+	line-height: 30px;
+	color: #5B6460;
+	margin-right: 25px;
+	
+}
+
+.inside-text{
+	font-style: normal;
+	font-weight: 300;
+	font-size: 16px;
+	line-height: 30px;
+	color: #333333;
+	margin-bottom: 200px;
+}
+
+
+.the-maps-with-text{
+	margin-bottom: 150px;
+}
+
+.img-maps-block{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 50%;
+}
+
+.img-maps{
+	background: url('../images/2TheArea/map.png') no-repeat;
+	background-size: cover;
+	width: 500px;
+	height: 500px;
+}
+
+.maps-with-text-info{
+	width: 50%;
+}
+
+.the-maps-with-text-inner{
+	display: flex;
+	justify-content: space-between;
+}
+
+.text-block-maps{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 500px;
+}
+
+.maps-with-text{
+	font-style: normal;
+	font-weight: 300;
+	font-size: 16px;
+	line-height: 30px;
+	color: #333333;
+}
+
+.activities-title{
+	font-style: normal;
+	font-weight: 400;
+	font-size: 40px;
+	line-height: 56px;
+	color: #5B6460;
+	margin-bottom: 100px;
+}
+
+.restaurants-shopping-inner{
+	display: flex;
+	margin-bottom: 220px;
+	justify-content: space-between;
+}
+
+.img-restaurants-shopping{
+	background: url('../images/2TheArea/restaurants-shopping.png') no-repeat;
+	background-size: cover;
+	width: 50%;
+}
+
+.restaurants-shopping-info{
+	width: 50%;
+	display: flex;
+	align-items: start;
+	flex-direction: column;
+	margin-left: 140px;
+	margin-top: 100px;
+}
+
+.restaurants-shopping-title{
+	font-style: normal;
+	font-weight: 400;
+	font-size: 40px;
+	line-height: 40px;
+	color: #5B6460;
+	margin-bottom: 50px;
+}
+
+.breakfest-dinner{
+	display: flex;
+	margin-bottom: 50px;
+}
+
+.breakfest-dinner p:first-child{
+	margin-right: 30px;
+}
+
+.breakfest-dinner p{
+	font-style: italic;
+	font-weight: 400;
+	font-size: 18px;
+	line-height: 30px;
+	color: #5B6460;
+	
+}
+
+.restaurants-shopping-text{
+	font-style: normal;
+	font-weight: 300;
+	font-size: 16px;
+	line-height: 30px;
+	color: #333333;
+	margin-bottom: 200px;
+}
+
+.img-experiences-in-nature{
+	background: url('../images/2TheArea/experiences-in-nature.png') no-repeat;
+	background-size: cover;
+	width: 50%;
+}
+
+.the-experiences-in-nature-inner{
+	display: flex;
+	margin-bottom: 220px;
+	justify-content: space-between;
+}
+
+.experiences-in-nature-info{
+	width: 50%;
+	display: flex;
+	align-items: start;
+	flex-direction: column;
+	max-width: 520px;
+}
+
+.experiences-in-nature-title{
+	font-style: normal;
+	font-weight: 400;
+	font-size: 40px;
+	line-height: 40px;
+	color: #5B6460;
+	margin-bottom: 50px;
+}
+
+.space-kitchen-bathroom{
+	display: flex;
+	margin-bottom: 50px;
+}
+
+.space-kitchen-bathroom p{
+	font-style: italic;
+	font-weight: 400;
+	font-size: 18px;
+	line-height: 30px;
+	color: #5B6460;
+	margin-right: 25px;
+	
+}
+
+.experiences-in-nature-text{
+	font-style: normal;
+	font-weight: 300;
+	font-size: 16px;
+	line-height: 30px;
+	color: #333333;
+	margin-bottom: 200px;
+}
+
+.img-practicalities{
+	background: url('../images/1TheHutPage/practicalities.png') no-repeat;
+	background-size: cover;
+	width: 50%;
+}
+
+.practicalities-info{
+	width: 50%;
+	display: flex;
+	align-items: start;
+	flex-direction: column;
+	margin-left: 140px;
+	margin-top: 100px;
+}
+
+.practicalities-title{
+	font-style: normal;
+	font-weight: 400;
+	font-size: 40px;
+	line-height: 40px;
+	color: #5B6460;
+	margin-bottom: 50px;
+}
+
+.breakfest-dinner{
+	display: flex;
+	margin-bottom: 50px;
+}
+
+.breakfest-dinner p:first-child{
+	margin-right: 30px;
+}
+
+.breakfest-dinner p{
+	font-style: italic;
+	font-weight: 400;
+	font-size: 18px;
+	line-height: 30px;
+	color: #5B6460;
+	
+}
+
+.practicalities-text{
+	font-style: normal;
+	font-weight: 300;
+	font-size: 16px;
+	line-height: 30px;
+	color: #333333;
+	margin-bottom: 200px;
+}
+
+.practicalities-inner{
+	display: flex;
+	margin-bottom: 220px;
+	justify-content: space-between;
+}
