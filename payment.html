@@ -5,14 +5,9 @@
 	<meta charset="UTF-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>The Hut</title>
 	<link rel="icon" href="./favicon.png">
-	<link rel="preconnect" href="https://fonts.googleapis.com">
-	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-	<link href="https://fonts.googleapis.com/css2?family=Mulish&family=Open+Sans:wght@300;400&display=swap"
-		rel="stylesheet">
-	<link rel="stylesheet" href="./css/style.css">
-	<link rel="stylesheet" href="./css/adaptiveTheHut.css">
+	<link rel="stylesheet" href="./css/payment.css">
+	<title>Payment</title>
 </head>
 
 <body>
@@ -68,97 +63,23 @@
 		</div>
 	</header>
 	<main>
-		<section class="the-hut">
-			<div class="the-hut-inner">
-				<h2 class="the-hut-title">
-					The Hut
-				</h2>
+		<div class="main-container">
+			<div class="main-inner">
+				<h2 class="form-title">Form with datetime, email, tel, url</h2>
+				<form class="form">
+
+					<input type="datetime-local" id="datetime" name="datetime" required>
+
+					<input placeholder="Email" type="email" id="email" name="email" required>
+
+					<input placeholder="Phone" type="tel" id="tel" name="tel" pattern="[+]380[0-9]{9}" required>
+
+					<input placeholder="URL" type="url" id="url" name="url" required>
+
+					<input id="submit" type="submit" value="Send">
+				</form>
 			</div>
-		</section>
-		<section class="outside">
-			<div class="container-main-block-the-hut">
-				<div class="outside-inner">
-					<div class="img-outside">
-					</div>
-					<div class="outside-info">
-						<h3 class="outside-title">
-							The Outside
-						</h3>
-						<div class="hot-tube-and-el-car">
-							<p>
-								Hot tube
-							</p>
-							<p>
-								Electric car change
-							</p>
-						</div>
-						<p class="outside-text">
-							Løvtag’s three exclusive and comfortable cabins, Et, Ro and Ly, are designed by architect Sigurd
-							Larsen. They all have an open space with a double bed, a double sofa bed, kitchen, separate toilet
-							and an outdoor shower. On the roof, surrounded by treetops, there is a terrace, which is about nine
-							meters above ground.
-						</p>
-					</div>
-				</div>
-			</div>
-		</section>
-		<section class="the-inside">
-			<div class="container-main-block-the-hut">
-				<div class="the-inside-inner">
-					<div class="inside-info">
-						<h3 class="inside-title">
-							The inside
-						</h3>
-						<div class="space-kitchen-bathroom">
-							<p>
-								Space
-							</p>
-							<p>
-								Kitchen
-							</p>
-							<p>
-								Bathroom
-							</p>
-						</div>
-						<p class="inside-text">
-							Løvtag’s three exclusive and comfortable cabins, Et, Ro and Ly, are designed by architect Sigurd
-							Larsen. They all have an open space with a double bed, a double sofa bed, kitchen, separate toilet
-							and an outdoor shower. On the roof, surrounded by treetops, there is a terrace, which is about nine
-							meters above ground.
-						</p>
-					</div>
-					<div class="img-inside">
-					</div>
-				</div>
-			</div>
-		</section>
-		<section class="practicalities">
-			<div class="container-main-block-the-hut">
-				<div class="practicalities-inner">
-					<div class="img-practicalities">
-					</div>
-					<div class="practicalities-info">
-						<h3 class="practicalities-title">
-							Practicalities
-						</h3>
-						<div class="breakfest-dinner">
-							<p>
-								Breakfast
-							</p>
-							<p>
-								Classic Dinner
-							</p>
-						</div>
-						<p class="practicalities-text">
-							Løvtag’s three exclusive and comfortable cabins, Et, Ro and Ly, are designed by architect Sigurd
-							Larsen. They all have an open space with a double bed, a double sofa bed, kitchen, separate toilet
-							and an outdoor shower. On the roof, surrounded by treetops, there is a terrace, which is about nine
-							meters above ground.
-						</p>
-					</div>
-				</div>
-			</div>
-		</section>
+		</div>
 	</main>
 	<footer class="footer">
 		<div class="container-footer">

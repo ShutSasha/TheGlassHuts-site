@@ -362,6 +362,7 @@ font-family: 'Open Sans', sans-serif; */
 	color: #8cb2bf;
 	border-bottom: 2px solid #8cb2bf;
 	transition: color .4s ease-out, border .4s ease-out;
+	box-shadow: inset 0 20px 16px -16px rgba(0,0,0,0.1);
 }
 
 .the-forest-video-inner{
@@ -379,6 +380,12 @@ font-family: 'Open Sans', sans-serif; */
    font-size: 40px;
    line-height: 40px;
    color: #5B6460;
+	font-weight: bold;
+	/* background: linear-gradient(330deg, #fee140  ,#fa709a 50%); */
+	/* background: linear-gradient(330deg, #b490ca  ,#5ee7df 70%); */
+	background: linear-gradient(330deg, #38f9d7  ,#43e97b 70%);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
 }
 
 .the-forest-video{
@@ -387,6 +394,12 @@ font-family: 'Open Sans', sans-serif; */
 }
 
 .tube-video-forest-house{
+	margin-bottom: 150px;
+}
+
+#audio-player{
+	height: 50px;
+	width: 50%;
 	margin-bottom: 150px;
 }
 
