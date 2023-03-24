@@ -468,11 +468,11 @@ font-family: 'Open Sans', sans-serif; */
    line-height: 40px;
    color: #5B6460;
 	font-weight: bold;
-	/* background: linear-gradient(330deg, #fee140  ,#fa709a 50%); */
-	/* background: linear-gradient(330deg, #b490ca  ,#5ee7df 70%); */
-	background: linear-gradient(330deg, #38f9d7  ,#43e97b 70%);
+	background: linear-gradient(330deg, #38f9d7, #43e97b 70%);
 	-webkit-background-clip: text;
+	background-clip: text;
 	-webkit-text-fill-color: transparent;
+	color: transparent;
 }
 
 .the-forest-video{
