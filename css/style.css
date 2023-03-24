@@ -13,6 +13,9 @@ a{
 	text-decoration: none;
 }
 
+html{
+	scroll-behavior: smooth;
+}
 /* font-family: 'Mulish', sans-serif;
 font-family: 'Open Sans', sans-serif; */
 
@@ -86,6 +89,16 @@ font-family: 'Open Sans', sans-serif; */
 		visibility: visible;
 		transform: (-50%,0);
 		pointer-events: all;
+	}
+
+	.header-list-item ul li{
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+
+	.header-list-item ul li a{
+		font-size: 18px;
 	}
 
 	.header-list-item ul li a:hover{

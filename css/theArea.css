@@ -85,6 +85,16 @@ a{
 		pointer-events: all;
 	}
 
+	.header-list-item ul li{
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+
+	.header-list-item ul li a{
+		font-size: 18px;
+	}
+
 	.header-list-item ul li a:hover{
 		cursor: pointer;
 		text-decoration: underline;
