@@ -1869,3 +1869,26 @@ font-family: 'Open Sans', sans-serif; */
 
 /* !!!!         THE AREA PAGE       !!!! */
 /* !!!!         THE AREA PAGE       !!!! */
+
+/* TODO  scroll*/
+
+.scrollTop{
+	position: fixed;
+	bottom: 50px;
+	right: 50px;
+	width: 50px;
+	height: 50px;
+	cursor: pointer;
+	z-index: 999;
+}
+
+.showScroll{
+	opacity: 1;
+	transition: opacity 1s ease;
+}
+
+.hideScroll{
+	opacity: 0;
+	transition: opacity 1s ease;
+	cursor: default;
+}
