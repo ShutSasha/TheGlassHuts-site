@@ -19,6 +19,10 @@ html{
 /* font-family: 'Mulish', sans-serif;
 font-family: 'Open Sans', sans-serif; */
 
+.scrollTop:hover{
+	transform: scale(1.1);
+}
+
 .header{
 	margin: 20px 0;
 }
@@ -27,11 +31,29 @@ font-family: 'Open Sans', sans-serif; */
 	margin: 0 32px 0 146px;
 }
 
-.header-inner{
-	display: flex;
-	justify-content: space-between;
+ .header-inner{
+	display: grid;
+	grid-template-columns: repeat(10, 1fr);
+	grid-template-rows: 1fr;
+	grid-column-gap: 0px;
+	grid-row-gap: 0px; 
 	align-items: center;
 }
+
+.logo{
+	grid-column: 1
+}
+
+.nav-header{
+	grid-column: 4/8;
+	justify-content: center;
+	align-items: center;
+	min-width: 700px;
+}
+
+.book-now{
+	grid-column: 10/11; 
+}  
 
 .header-list{
 	display: flex;
@@ -110,6 +132,7 @@ font-family: 'Open Sans', sans-serif; */
 
 
 /* for phone media */
+/* ~ ul" выбирает элемент "ul", который следует непосредственно за элементом с классом "nav__toggle" */
 @media (hover:none){
 	.nav__toggle:checked ~ ul{
 		opacity: 1;
@@ -118,6 +141,8 @@ font-family: 'Open Sans', sans-serif; */
 		pointer-events: all;
 	}
 
+
+	/* "+" используется для выбора элемента "label", который непосредственно следует за элементом "nav__toggle" и находится на том же уровне вложенности. */
 	.nav__toggle:checked + label{
 		transform: rotate(180deg);
 	}
@@ -332,15 +357,16 @@ font-family: 'Open Sans', sans-serif; */
 }
 
 .the-cabins-inner{
-	display: flex;
-	justify-content: space-between;
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	grid-template-rows: 1fr;
 }
 
 .the-cabins-info{
+	grid-column: 1/2;
 	display: flex;
 	flex-direction: column;
 	align-items: flex-start;
-	max-width: 50%;	
 	margin-left: 150px;
 }
 
@@ -388,7 +414,7 @@ font-family: 'Open Sans', sans-serif; */
 }
 
 .gallery-photo-inner{
-	display: flex;
+	display: grid;
 	justify-content: center;
 }
 
@@ -405,16 +431,17 @@ font-family: 'Open Sans', sans-serif; */
 
 .gallery-photo-item img:hover{
 	transform: scale(1.1);
-	
+	filter: brightness(105%);
 }
 
 .location-map{
-	display: flex;
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
 	margin-bottom: 150px;
 }
 
 .about-the-forest{
-	width: 50%;
+	width: 100%;
 	min-height: 400px;
 	padding-top: 150px;
 	padding-bottom: 150px;
@@ -464,7 +491,7 @@ font-family: 'Open Sans', sans-serif; */
 }
 
 .the-forest-video-inner{
-	display: flex;
+	display: grid;
 	justify-content: center;
 	align-items: center;
 	flex-direction: column;
@@ -496,9 +523,11 @@ font-family: 'Open Sans', sans-serif; */
 }
 
 #audio-player{
+	justify-self: center;
 	height: 50px;
 	width: 50%;
 	margin-bottom: 150px;
+	min-width: 250px;
 }
 
 .facilities{
@@ -523,15 +552,16 @@ font-family: 'Open Sans', sans-serif; */
 }
 
 .facilities-lists{
-	display: flex;
-	justify-content: space-between;
+	display: grid;
+	grid-template-columns: repeat(4, 1fr);
+   grid-gap: 10px;
 }
 
 .facilities-list{
 	display: flex;
-	flex-direction: column;
-	align-items: center;
-	/* margin-bottom: 85px; */
+   flex-direction: column;
+   justify-content: space-between;
+   align-items: center;
 }
 
 .facitilies-item{
@@ -560,13 +590,14 @@ font-family: 'Open Sans', sans-serif; */
 }
 
 .more-about-us{
-	display: flex;
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
 	position: relative;
 	margin-bottom: 150px;
 }
 
 .picture-about-us{
-	width: 50%;
+	width: 100%;
 	height: 700px;
 }
 
@@ -614,7 +645,8 @@ font-family: 'Open Sans', sans-serif; */
 }
 
 .stay-in-touch-with-us-inner{
-	display: flex;
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
 	justify-content: space-between;
 }
 
@@ -628,7 +660,7 @@ font-family: 'Open Sans', sans-serif; */
 }
 
 .stay-in-touch-with-us-info{
-	width: 50%;
+	width: 100%;
 }
 
 .stay-in-touch-with-us-info-inner p{
@@ -666,7 +698,7 @@ font-family: 'Open Sans', sans-serif; */
 }
 
 .stay-in-touch-with-us-picture{
-	width: 50%;
+	width: 100%;
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -718,11 +750,16 @@ font-family: 'Open Sans', sans-serif; */
 }
 
 .footer-inner{
-	display: flex;
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+}
+
+.cards-and-privacy{
+	justify-self: flex-end;
 }
 
 .newsletter{
-	width: 50%;
+	width: 100%;
 }
 
 .newsletter-title{
@@ -782,8 +819,8 @@ font-family: 'Open Sans', sans-serif; */
 }
 
 .cards-and-privacy{
-	width: 50%;
 	display: flex;
+	justify-self: flex-end;
 	flex-direction: column;
 	align-items: end;
 }
@@ -795,6 +832,7 @@ font-family: 'Open Sans', sans-serif; */
 
 .privacy-item{
 	margin-right: 35px;
+	text-align: end;
 }
 
 .privacy-item:last-child{
@@ -884,16 +922,15 @@ font-family: 'Open Sans', sans-serif; */
 	}
 
 	.newsletter{
-		width: 40%;
-	}
-
-	.cards-and-privacy{
-		width: 60%;
+		width: 100%;
 	}
 
 	.tube-video-forest-house{
 		width: 850px;
 		height: 600px;
+	}
+	.nav-header{
+		grid-column: 5/8
 	}
 }
 
@@ -916,6 +953,7 @@ font-family: 'Open Sans', sans-serif; */
 
 	.burger{
 		display: flex;
+		grid-column: 10
 	}
 
 	.nav-header{
@@ -935,12 +973,17 @@ font-family: 'Open Sans', sans-serif; */
 		padding: 50px 40px;
 		background-color: black;
 		animation: burgerAnimation .4s;
+		min-width: 0;
 	}
 
 	.nav-header ul{
 		flex-direction: column;
 		align-items: center;
 		row-gap: 80px;
+	}
+
+	.nav__toggle{
+		display: none;
 	}
 
 	.header-list-link{
@@ -968,12 +1011,14 @@ font-family: 'Open Sans', sans-serif; */
 	}
 
 	.the-cabins-info{
+		grid-column: 1/3;
+		margin-left: 5rem;
 		max-width: 100%;
 		margin-bottom: 100px;
 	}
 
 	.gallery-photo-inner{
-		display: flex;
+		display: grid;
 		justify-content: center;
 	}
 
@@ -1057,6 +1102,16 @@ font-family: 'Open Sans', sans-serif; */
 		width: 700px;
 		height: 550px;
 	}
+
+	.stay-in-touch-with-us-inner{
+		display: flex;
+	}
+	.stay-in-touch-with-us-info{
+		width: 50%;
+	}
+	.stay-in-touch-with-us-picture{
+		width: 50%;
+	}
 }
 
 @media (max-width: 800px){
@@ -1137,6 +1192,10 @@ font-family: 'Open Sans', sans-serif; */
 		width: 550px;
 		height: 400px;
 	}
+
+	.location-map{
+		grid-template-columns: 1fr;
+	}
 }
 
 @media (max-width: 640px){
@@ -1183,6 +1242,11 @@ font-family: 'Open Sans', sans-serif; */
 		align-items: center;
 	}
 
+	.footer-inner{
+		grid-template-columns: 1fr;
+		grid-template-rows: repeat(2, 1fr);
+	}
+
 	.privacy-list{
 		align-items: center;
 	}
@@ -1208,6 +1272,7 @@ font-family: 'Open Sans', sans-serif; */
 	}
 
 	.the-cabins-info{
+		grid-column: 1/3;
 		margin-left: 0;
 		display: flex;
 		justify-content: center;
@@ -1566,7 +1631,7 @@ font-family: 'Open Sans', sans-serif; */
 	margin-bottom: 100px;
 }
 
-/*  */
+
 
 .img-inside{
 	background: url('../images/1TheHutPage/the-inside.png') no-repeat;
@@ -1580,7 +1645,7 @@ font-family: 'Open Sans', sans-serif; */
 	justify-content: space-between;
 }
 
-/*  */
+
 .inside-info{
 	width: 50%;
 	display: flex;
